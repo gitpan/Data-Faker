@@ -1,0 +1,13 @@
+Revision history for Perl extension Data::Faker.
+
+0.07  Thu Jul 14 08:22:31 2005
+    - Renamed to Data::Faker, probably a better choice in the first place.
+    - Removed unused dependency on Date::Calc
+    - Replaced 'our' with 'use vars', should work on just about any version
+      of Perl now.
+
+0.06  Wed Jul 13 15:19:00 2005
+	- Fixed some packaging problems
+
+0.05  Wed Jul 13 15:10:00 2005
+	- Initial public release (as Text::FakeData)
