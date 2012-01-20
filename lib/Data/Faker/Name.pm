@@ -1,5 +1,5 @@
 package Data::Faker::Name;
-use vars qw($VERSION); $VERSION = '0.07';
+use vars qw($VERSION); $VERSION = '0.08';
 use base 'Data::Faker';
 
 =head1 NAME

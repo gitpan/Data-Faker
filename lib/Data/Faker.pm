@@ -1,5 +1,5 @@
 package Data::Faker;
-use vars qw($VERSION); $VERSION = '0.07';
+use vars qw($VERSION); $VERSION = '0.08';
 
 =head1 NAME
 
@@ -14,7 +14,7 @@ Data::Faker - Perl extension for generating fake data
   print "Name:    ".$faker->name."\n";
   print "Company: ".$faker->company."\n";
   print "Address: ".$faker->street_address."\n";
-  print "         ".$faker->city.", ".$faker->state." ".$faker->zip."\n";
+  print "         ".$faker->city.", ".$faker->us_state_abbr." ".$faker->us_zip_code."\n";
 
 =head1 DESCRIPTION
 

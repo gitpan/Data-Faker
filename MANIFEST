@@ -19,3 +19,4 @@ t/Data-Faker-PhoneNumber.t
 t/Data-Faker-StreetAddress.t
 t/Data-Faker.t
 META.yml                                 Module meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)

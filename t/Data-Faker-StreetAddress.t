@@ -1,4 +1,4 @@
-use Test::More tests => 14;
+use Test::More tests => 15;
 BEGIN { use_ok('Data::Faker') };
 
 my $faker = Data::Faker->new('StreetAddress');
