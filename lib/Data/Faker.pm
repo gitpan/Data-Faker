@@ -1,5 +1,5 @@
 package Data::Faker;
-use vars qw($VERSION); $VERSION = '0.08';
+use vars qw($VERSION); $VERSION = '0.09';
 
 =head1 NAME
 
@@ -70,7 +70,7 @@ plugins.
 
 =cut
 
-sub methods { return keys %Data::Faker::plugins; } 
+sub methods { return keys %Data::Faker::plugins; }
 
 =item register_plugin();
 
@@ -121,7 +121,7 @@ sub AUTOLOAD {
 	$result =~ s/\\#/\0/g;
 	$result =~ s/#/int(rand(10))/ge;
 	$result =~ s/\0/#/g;
-	
+
 	return $result;
 }
 
@@ -211,7 +211,7 @@ Jason Kohles, E<lt>email@jasonkohles.comE<gt>
 Copyright 2004-2005 by Jason Kohles
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself. 
+it under the same terms as Perl itself.
 
 =cut
 

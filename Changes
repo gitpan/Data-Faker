@@ -1,5 +1,10 @@
 Revision history for Perl extension Data::Faker.
 
+0.09
+    - Fixed the name of the 'hostname' plugin so 'email' works consistently. (closes Bug #50707)
+    - Don't assume the name of the perl executable during tests (closes Bug #39937)
+    - Ignore warnings from redefining timestr (used in both Data::Faker::DateTime and Benchmark)
+
 0.08  Fri Jan 20 00:35:00 2012
     - Implemented the 'city' method for Data::Faker::StreetAddress. (closes Bug #65311)
     - Added a 'job_title' method for Data::Faker::Company.

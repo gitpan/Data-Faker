@@ -4,7 +4,7 @@ sub check_this {
 	my $arg = shift;	
 	my $result = shift;
 
-	ok(my $res = `perl -Ilib ./datafaker $arg`, "Run for $arg");
+	ok(my $res = `$^X -Ilib ./datafaker $arg`, "Run for $arg");
 	like($res,$result,"Results for $arg");
 }
 

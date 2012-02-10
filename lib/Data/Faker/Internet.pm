@@ -1,5 +1,5 @@
 package Data::Faker::Internet;
-use vars qw($VERSION); $VERSION = '0.08';
+use vars qw($VERSION); $VERSION = '0.09';
 use base 'Data::Faker';
 use Data::Faker::Company;
 use Data::Faker::Name;
@@ -48,7 +48,7 @@ Return a fake computer hostname.
 =cut
 
 __PACKAGE__->register_plugin(
-	'email' => [qw($domain_word.$domain_name)],
+	'hostname' => [qw($domain_word.$domain_name)],
 );
 
 =item server_name
@@ -103,7 +103,7 @@ __PACKAGE__->register_plugin(
 		my $company = lc($self->company);
 		$company =~ s/'//g;
 		$company =~ s/\W+/-/g;
-		
+
 		return $company;
 	},
 );

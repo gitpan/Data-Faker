@@ -9,7 +9,7 @@ SYNOPSIS
       print "Name:    ".$faker->name."\n";
       print "Company: ".$faker->company."\n";
       print "Address: ".$faker->street_address."\n";
-      print "         ".$faker->city.", ".$faker->state." ".$faker->zip."\n";
+      print "         ".$faker->city.", ".$faker->us_state_abbr." ".$faker->us_zip_code."\n";
 
 DESCRIPTION
     This module creates fake (but reasonable) data that can be used for

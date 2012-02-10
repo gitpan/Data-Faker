@@ -1,7 +1,13 @@
 package Data::Faker::DateTime;
-use vars qw($VERSION); $VERSION = '0.08';
+use strict;
+use warnings;
+use vars qw($VERSION); $VERSION = '0.09';
 use base 'Data::Faker';
 use POSIX;
+
+# timestr here redefines the one from Benchmark, which is only loaded for tests.
+no warnings 'redefine';
+
 
 =head1 NAME
 
