@@ -1,5 +1,15 @@
-use Test::More tests => 47;
+use Test::More;
 BEGIN { use_ok('Data::Faker') };
 
-my $faker = Data::Faker->new();
-ok($faker->$_(),$_) for $faker->methods;
+subtest 'instance is returned' => sub {
+    new_ok('Data::Faker');
+};
+
+subtest 'all methods return something true-ish' => sub {
+    my $faker = Data::Faker->new();
+    foreach($faker->methods) {
+        ok($faker->$_(), $_);
+    }
+};
+
+done_testing();

@@ -1,5 +1,5 @@
 package Data::Faker::Name;
-use vars qw($VERSION); $VERSION = '0.09';
+use vars qw($VERSION); $VERSION = '0.10_01';
 use base 'Data::Faker';
 
 =head1 NAME
@@ -16,7 +16,7 @@ See L<Data::Faker>
 
 =item name
 
-Return a fake persons name (first and last possibly with suffixes such as Jr
+Return a fake person's name (first and last possibly with suffixes such as Jr
 or PhD).
 
 =cut

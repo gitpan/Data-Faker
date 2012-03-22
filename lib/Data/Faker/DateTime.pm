@@ -1,13 +1,9 @@
 package Data::Faker::DateTime;
 use strict;
 use warnings;
-use vars qw($VERSION); $VERSION = '0.09';
+use vars qw($VERSION); $VERSION = '0.10_01';
 use base 'Data::Faker';
 use POSIX;
-
-# timestr here redefines the one from Benchmark, which is only loaded for tests.
-no warnings 'redefine';
-
 
 =head1 NAME
 
@@ -234,10 +230,15 @@ your system.
 
 =cut
 
-sub timestr {
-	my $format = shift;
-	if(ref($format)) { $format = shift }
-	POSIX::strftime($format,localtime(__PACKAGE__->unixtime));
+{
+    # timestr here redefines the one from Benchmark, which is only loaded for tests.
+    no warnings 'redefine';
+
+    sub timestr {
+        my $format = shift;
+        if(ref($format)) { $format = shift }
+        POSIX::strftime($format, localtime(__PACKAGE__->unixtime));
+    }
 }
 
 =back
