@@ -1,5 +1,12 @@
 Revision history for Perl extension Data::Faker.
 
+0.10
+    - No significant features or fixes.
+    - Turn off redefine warnings ONLY around the timestr definition.
+    - Specify the license ('perl') so it shows up in meta data.
+    - Minor changes to test structure.
+    - Fixed typo in Data::Faker::DateTime test (closes Bug #76209)
+
 0.09
     - Fixed the name of the 'hostname' plugin so 'email' works consistently. (closes Bug #50707)
     - Don't assume the name of the perl executable during tests (closes Bug #39937)

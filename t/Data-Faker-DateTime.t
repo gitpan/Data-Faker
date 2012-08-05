@@ -1,5 +1,5 @@
 use Test::More;
-BEGIN { use_ok('Data::Faker::DateTIme') };
+BEGIN { use_ok('Data::Faker::DateTime') };
 
 subtest 'instance is returned' => sub {
     new_ok('Data::Faker' => ['DateTime']);

@@ -1,5 +1,5 @@
 package Data::Faker::PhoneNumber;
-use vars qw($VERSION); $VERSION = '0.10_01';
+use vars qw($VERSION); $VERSION = '0.10_03';
 use base 'Data::Faker';
 
 =head1 NAME

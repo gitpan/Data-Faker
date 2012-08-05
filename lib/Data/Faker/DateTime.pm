@@ -1,7 +1,7 @@
 package Data::Faker::DateTime;
 use strict;
 use warnings;
-use vars qw($VERSION); $VERSION = '0.10_01';
+use vars qw($VERSION); $VERSION = '0.10_03';
 use base 'Data::Faker';
 use POSIX;
 
@@ -247,7 +247,7 @@ your system.
 
 =over 4
 
-=item Be careful build timestamps from pieces
+=item Be careful building timestamps from pieces
 
 Be very careful about building date/time representations in formats that
 are not already listed here.  For example if you wanted to get a date that
