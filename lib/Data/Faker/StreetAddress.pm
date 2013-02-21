@@ -1,5 +1,5 @@
 package Data::Faker::StreetAddress;
-use vars qw($VERSION); $VERSION = '0.10_03';
+use vars qw($VERSION); $VERSION = '0.10_04';
 use base 'Data::Faker';
 use Data::Faker::Name;
 
@@ -178,8 +178,6 @@ __PACKAGE__->register_plugin(
 		'#-F','\##-F','#-G','\##-G','#-H','\##-H','#-I','\##-I','#-J','\##-J',
 	],
 );
-
-=back
 
 =item city
 
@@ -506,6 +504,7 @@ __PACKAGE__->register_plugin(
     ],
 );
 
+=back
 
 =head1 SEE ALSO
 

@@ -1,5 +1,5 @@
 package Data::Faker::Company;
-use vars qw($VERSION); $VERSION = '0.10_03';
+use vars qw($VERSION); $VERSION = '0.10_04';
 use base 'Data::Faker';
 use Data::Faker::Name;
 
@@ -36,8 +36,6 @@ Return a company suffix (Inc, LLC, etc).
 __PACKAGE__->register_plugin('company_suffix' => [
 	'Inc', 'and Sons', 'LLC', 'Group'
 ]);
-
-=back
 
 =item job_title
 
