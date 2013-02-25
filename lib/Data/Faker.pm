@@ -1,5 +1,5 @@
 package Data::Faker;
-use vars qw($VERSION); $VERSION = '0.10_04';
+use vars qw($VERSION); $VERSION = '0.10';
 
 =head1 NAME
 

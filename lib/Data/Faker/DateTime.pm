@@ -1,7 +1,7 @@
 package Data::Faker::DateTime;
 use strict;
 use warnings;
-use vars qw($VERSION); $VERSION = '0.10_04';
+use vars qw($VERSION); $VERSION = '0.10';
 use base 'Data::Faker';
 use POSIX;
 

@@ -1,5 +1,7 @@
 package Data::Faker::StreetAddress;
-use vars qw($VERSION); $VERSION = '0.10_04';
+use strict;
+use warnings;
+use vars qw($VERSION); $VERSION = '0.10';
 use base 'Data::Faker';
 use Data::Faker::Name;
 

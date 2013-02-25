@@ -19,4 +19,4 @@ no_index:
     - inc
 requires:
   POSIX: 0
-version: 0.10_04
+version: 0.10
